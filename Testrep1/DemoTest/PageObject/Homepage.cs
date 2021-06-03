@@ -15,6 +15,8 @@ namespace DemoTest.PageObject
         [FindsBy(How = How.Id, Using = "logout")]
         public IWebElement Logout { get; set; }
 
+        [FindsBy(How = How.Id, Using = "logous")]
+        public IWebElement Logout { get; set; }
 
         public Homepage(IWebDriver driver)
         {
