@@ -42,6 +42,25 @@ namespace DemoTest.Testcases
            
         }
 
+        [Test]
+        public void Logout()
+        {
 
+            String folderPath = ConfigurationManager.AppSettings["ScreenshotPath"];
+
+
+            var login = new Login(driver);
+            login.LoginTOPHP();
+            _test.Info("Entering the URL of PHPtraveler");
+            //screenshots.SaveAsFile(folderPath + @"pic.png", ScreenshotImageFormat.Png);
+            var myprofile = new Myaccount(driver);
+            myprofile.changeAccountDetails();
+            _test.Info("Changing the User name");
+            var homepage = new Homepage(driver);
+            homepage.logoutPHP();
+            _test.Info("Logging Out");
+
+
+        }
     }
 }
