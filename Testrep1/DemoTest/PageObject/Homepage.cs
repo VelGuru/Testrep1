@@ -18,10 +18,9 @@ namespace DemoTest.PageObject
         [FindsBy(How = How.Id, Using = "logous")]
         public IWebElement Logoute { get; set; }
         
-        public IWebElement Logout { get; set; }
 
         [FindsBy(How = How.Id, Using = "Homepage")]
-        public IWebElement Hompage { get; set; }
+        public IWebElement Hompages { get; set; }
 
         public Homepage(IWebDriver driver)
         {
@@ -34,10 +33,9 @@ namespace DemoTest.PageObject
             Logoute.Click();
         }
 
-
         public void HomePage()
         {
-            Homepage.Click();
+            Hompages.Click();
         }
 
         public void logoutPHPs()
