@@ -16,6 +16,8 @@ namespace DemoTest.PageObject
         public IWebElement Logout { get; set; }
 
         [FindsBy(How = How.Id, Using = "logous")]
+        public IWebElement Logoute { get; set; }
+        
         public IWebElement Logout { get; set; }
 
         [FindsBy(How = How.Id, Using = "Homepage")]
@@ -29,7 +31,7 @@ namespace DemoTest.PageObject
 
         public void logoutPHP()
         {
-            Logout.Click();
+            Logoute.Click();
         }
 
 
@@ -38,5 +40,9 @@ namespace DemoTest.PageObject
             Homepage.Click();
         }
 
+        public void logoutPHPs()
+        {
+            Logoute.Click();
+        }
     }
 }
