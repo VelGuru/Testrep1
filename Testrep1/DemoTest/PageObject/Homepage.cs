@@ -16,8 +16,8 @@ namespace DemoTest.PageObject
         public IWebElement Logout { get; set; }
 
         [FindsBy(How = How.Id, Using = "logous")]
-        public IWebElement Logout { get; set; }
-
+        public IWebElement Logoute { get; set; }
+        
         public Homepage(IWebDriver driver)
         {
             this.driver = driver;
@@ -26,9 +26,12 @@ namespace DemoTest.PageObject
 
         public void logoutPHP()
         {
-            Logout.Click();
+            Logoute.Click();
         }
 
-
+        public void logoutPHPs()
+        {
+            Logoute.Click();
+        }
     }
 }
